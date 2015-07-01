@@ -26,26 +26,32 @@
   <body ng-app="starter" ng-controller="myCtrl">
 
     <ion-pane>
-      <ion-header-bar class="bar-stable  bar-assertive">
-        <h1 class="title">Aplikasi Counter | Ionic</h1>
+      <ion-header-bar class="bar-stable  bar-positive">
+        <h1 class="title">Aplikasi Counter</h1>
       </ion-header-bar>
 
     
       <ion-content>
-         
-         <h1 class="count" on-tap="onGesture(count)" id="content">{{count}}</h1>
+        <div class="counter">
+             <h1 class="count" on-tap="onGesture(count)" id="content">{{count}}</h1>
 
-         <div class="button-bar  button-block bar-dark">
-          <a class="button" ng-click="decrement()">-</a>
-          <a class="button" ng-click="increment()">+</a>
-        
+             <div class="button-bar bar-positive">
+                <a class="button  button-outline" ng-click="decrement()">-</a>
+                <a class="button  button-outline" ng-click="increment()">+</a>
+            </div>
         </div>
 
-    </div>
-        
-
-        
+        <div class="reset">
+            <button class="button button-block button-positive button-outline" ng-click="clear()">
+            reset counter
+            </button>
+        </div>
+      
+       
       </ion-content>
+       <div class="bar bar-footer bar-positive">
+          <div class="title">@ramdanidevid</div>
+        </div>
     </ion-pane>
   </body>
 </html>

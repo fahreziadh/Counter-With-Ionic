@@ -35,6 +35,12 @@ angular.module('starter', ['ionic'])
       $scope.count = $scope.count + 1;
   };
 
+  $scope.clear = function() {
+      $scope.count = 0;
+  };
+
+
+
   $scope.gesture = {
       used: ''
   };  
